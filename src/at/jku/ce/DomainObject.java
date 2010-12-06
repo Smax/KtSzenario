@@ -7,7 +7,7 @@ public class DomainObject {
 	private String uuid = UUID.randomUUID().toString();
 
 	private String name;
-	
+
 	private String comment;
 
 	/**
@@ -18,20 +18,28 @@ public class DomainObject {
 	}
 
 	public DomainObject(String id, String comment) {
-		  super();
-		  this.id = id;
-		}
+		super();
+		this.id = id;
+	}
 
 	public String getUuid() {
-		   return id;
-		}
+		return id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public String getComment() {
-		   return comment;
-		}
+		return comment;
+	}
 
 	public void setComment(String comment) {
-	   this.comment = comment;
+		this.comment = comment;
 	}
 
 }
