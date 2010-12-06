@@ -16,14 +16,14 @@ public class Main {
 	public static void main(String[] args) {
 		Set<DomainObject> objectSet = new HashSet<DomainObject>();
 
-		objectSet.add(new DomainObject("Helga", "Comment2"));
-		objectSet.add(new DomainObject("Walter", "Comment2"));
-		objectSet.add(new DomainObject("Hannah", "Comment2"));
-		objectSet.add(new DomainObject("Paul", "Comment2"));
-		objectSet.add(new DomainObject("Claudia", "Comment2"));
+		objectSet.add(DomainFactory.createDomainObject("Helga", "Comment2"));
+		objectSet.add(DomainFactory.createDomainObject("Walter", "Comment2"));
+		objectSet.add(DomainFactory.createDomainObject("Hannah", "Comment2"));
+		objectSet.add(DomainFactory.createDomainObject("Paul", "Comment2"));
+		objectSet.add(DomainFactory.createDomainObject("Claudia", "Comment2"));
 
 		for (DomainObject domainObject : objectSet) {
-		  LOGGER.debug(domainObject.getUuid);
+		  LOGGER.debug(domainObject.getUuid());
 		}
 	}
 
