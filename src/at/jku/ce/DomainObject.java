@@ -8,6 +8,8 @@ public class DomainObject {
 
 	private String name;
 	
+	private String comment;
+
 	/**
 	 * Default constructor
 	 */
@@ -15,7 +17,7 @@ public class DomainObject {
 		super();
 	}
 
-	public DomainObject(String id) {
+	public DomainObject(String id, String comment) {
 		  super();
 		  this.id = id;
 		}
@@ -23,5 +25,13 @@ public class DomainObject {
 	public String getUuid() {
 		   return id;
 		}
+
+	public String getComment() {
+		   return comment;
+		}
+
+	public void setComment(String comment) {
+	   this.comment = comment;
+	}
 
 }
